@@ -1,1 +1,2 @@
 Django~=4.2
+joblib~=1.2.0

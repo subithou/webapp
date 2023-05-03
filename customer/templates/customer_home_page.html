@@ -1,0 +1,129 @@
+{% extends 'customer_base_page.html' %}
+{% load static %}
+
+{% block content %}
+<main id="main" class="main">
+
+{#    <div class="pagetitle">#}
+{#      <h1>Dashboard</h1>#}
+{#      <nav>#}
+{#        <ol class="breadcrumb">#}
+{#          <li class="breadcrumb-item"><a href="index.html">Home</a></li>#}
+{#          <li class="breadcrumb-item active">Dashboard</li>#}
+{#        </ol>#}
+{#      </nav>#}
+{#    </div><!-- End Page Title -->#}
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+
+          <div class="row">
+
+            <!-- Sales Card -->
+            <div class="col-xxl-4 col-md-3">
+              <div class="card">
+
+
+            <div class="card-body">
+              <div>
+                  <br>
+                  <h2 style="color: darkblue"><b>Find your crop</b></h2>
+                  <br>
+              </div>
+
+              <div>
+
+                  <h5>It can help farmers make informed decisions about which crops to plant in a particular area,
+                      which can help to improve crop yields and reduce waste.
+                      By using advanced technologies, farmers can optimize crop growth and reduce the environmental impact of their operations.</h5>
+              </div>
+
+                <div class="modal-footer">
+
+                      <a href="{% url 'customer_crop_prediction' %}"><button type="submit" class="btn btn-success" style="height: 40%;">Learn more</button></a>
+                </div>
+
+            </div>
+          </div>
+            </div><!-- End Sales Card -->
+
+
+
+          <div class="col-xxl-4 col-md-3">
+              <div class="card">
+
+
+            <div class="card-body">
+              <div>
+                  <br>
+                  <h2 style="color: darkblue"><b>Calculate Yield!</b></h2>
+                  <br>
+              </div>
+
+              <div>
+
+                  <h5>It can help farmers make informed decisions about which crops to plant in a particular area,
+                      which can help to improve crop yields and reduce waste.
+                      By using advanced technologies, farmers can optimize crop growth and reduce the environmental impact of their operations.</h5>
+              </div>
+
+                <div class="modal-footer">
+
+                      <a href=""><button type="submit" class="btn btn-success" style="height: 40%;">Learn more</button></a>
+                </div>
+
+            </div>
+          </div>
+            </div>
+
+              <div class="col-xxl-4 col-md-3">
+              <div class="card">
+
+
+            <div class="card-body">
+              <div>
+                  <br>
+                  <h2 style="color: darkblue"><b>Best fertilizer</b></h2>
+                  <br>
+              </div>
+
+              <div>
+
+                  <h5>It can help farmers make informed decisions about which crops to plant in a particular area,
+                      which can help to improve crop yields and reduce waste.
+                      By using advanced technologies, farmers can optimize crop growth and reduce the environmental impact of their operations.</h5>
+              </div>
+
+                <div class="modal-footer">
+
+                      <a href=""><button type="submit" class="btn btn-success" style="height: 40%;">Learn more</button></a>
+                </div>
+
+            </div>
+          </div>
+            </div>
+
+
+
+
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+    <br>
+    <br>
+
+{% endblock %}
