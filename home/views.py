@@ -3,7 +3,6 @@ from django.contrib.auth import login
 from django.shortcuts import render, redirect
 
 from home.models import AuthenticationBackend
-from login.models import User
 
 
 # Create your views here.
@@ -17,8 +16,10 @@ def login_page(request):
         username1 = request.POST.get('username')
         password1 = request.POST.get('password')
 
-        if AuthenticationBackend.authenticate(self=None, request=request, username=username1, password=password1) is not None:
-            user = AuthenticationBackend.authenticate(self=None, request=request, username=username1, password=password1)
+        if AuthenticationBackend.authenticate(self=None, request=request, username=username1,
+                                              password=password1) is not None:
+            user = AuthenticationBackend.authenticate(self=None, request=request, username=username1,
+                                                      password=password1)
 
             login(request, user)
             # Redirect to a success page.
