@@ -173,6 +173,10 @@ def weather(request):
     return render(request, 'customer_weather_page.html', {'context': context})
 
 
+def fertilizer_suggestion(request):
+
+    return render(request, 'customer_fertilizer_suggestion.html')
+
 def weather_result(request, city):
 
 
